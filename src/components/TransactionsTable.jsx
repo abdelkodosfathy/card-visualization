@@ -62,7 +62,7 @@ const TransactionsTable = () => {
       <Circle radius="12rem" deg="180" classes="top-1 -left-12"/>
       <Circle radius="15rem" deg="0" classes="top-48 -right-[74px]"/>
 
-      <div className='flex justify-between w-full my-2 z-[1]'>
+      <div className='flex justify-between gap-2 w-full my-2 z-[1]'>
         <div className='flex gap-2'>
           <Button className="bg-white/10 hover:bg-white/20 z-[1] backdrop-blur-lg">
             Transactions
@@ -72,22 +72,7 @@ const TransactionsTable = () => {
           </Button>
         </div>
 
-
-
         <div className="flex gap-2 z-[9]">
-          {/* <Button
-            className="bg-white/10 hover:bg-white/20"
-            onClick={() => exportToExcel(filteredTransactions)}
-          >
-            Export to Excel
-          </Button>
-          <Button
-            className="bg-white/10 hover:bg-white/20"
-            onClick={() => exportToPDF(filteredTransactions)}
-          >
-            Export to PDF
-          </Button> */}
-                  {/* Use ExportDropdown Component */}
           <ExportDropdown
             transactions={sortedTransactions}
             exportToExcel={exportToExcel}
@@ -103,11 +88,9 @@ const TransactionsTable = () => {
             />
           </div>
         </div>
-        
-        
       </div>
 
-      <div className="p-5  backdrop-blur-lg  rounded-3xl text-white flex flex-col gap-2 bg-white/10 ">
+      <div className="p-5 min-w-fit backdrop-blur-lg  rounded-3xl text-white flex flex-col gap-2 bg-white/10 ">
         <CustomTable
           sortConfig={sortConfig}
           handleSort={handleSort}

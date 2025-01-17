@@ -4,8 +4,10 @@ import TransactionsTable from "./components/TransactionsTable";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 function App() {
+  console.log("1.0");
+  
   return (
-    <Router>
+    <Router basename="/card-visualization">
       <div className="bg-[rgb(0,14,33)] min-h-screen	 p-9 text-white">
         <NavBar/>
         <Routes>

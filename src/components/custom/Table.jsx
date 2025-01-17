@@ -11,14 +11,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretUp, faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
 export function CustomTable({ transactions, handleSort, sortConfig }) {
-
-  console.log(sortConfig);
-
- 
   return (
     <Table>
       <TableHeader>
-        {/* <TableRow className="bg-gray-100 hover:bg-gray-200"> */}
         <TableRow className="bg-white/20 hover:bg-white/10 rounded">
           <TableHead>
             <SotrableHead onClick={() => handleSort("amount")} name="Amount" sortConfig={sortConfig}/>
