@@ -7,7 +7,7 @@ function App() {
   console.log("1.0");
   
   return (
-    <Router basename="/card-visualization">
+    <Router>
       <div className="bg-[rgb(0,14,33)] min-h-screen	 p-9 text-white">
         <NavBar/>
         <Routes>
